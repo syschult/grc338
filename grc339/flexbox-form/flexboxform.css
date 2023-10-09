@@ -1,69 +1,89 @@
 /*CSS DOCUMENT*/
 
+body {
+	font-family: sans-serif;
+	line-height: 1.4em;
+	color: #222;
+	background-color: #fafafa;
+	box-sizing: border-box;
+	}
+	
 div.container {
-	max-width: 50em;
-	margin: auto;
+        max-width: 40em;
+        margin: 1em;
+        padding: 1em;
 }
 
-section {
-	margin: 0 0 1em;
+header {
+	padding-top: 1em;
 }
 
-.section-1 {
-	background: #888;
+
+section.personal-info ul li {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 1em;
 }
 
-.section-2 {
-	background: #aaa;
+section.personal-info ul li input[type="text"],
+section ul li input[type="email"],
+section ul li input[type="tel"],
+section ul li select {
+	flex: 4 0 2em;
+	box-sizing: border-box;
 }
 
-.section-3 {
-	background: #ccc;
+section.personal-info ul li label {
+	flex: 0 0 10em;
 }
 
-.section-4 {
-	background: #eee;
-}
+section.order ul, section.method ul {
+	display: flex;
+	flex-wrap: wrap;
+	}
+
+section.order ul li , section.method ul li {
+	flex: 1 0 15em;
+	}
+	
+	
+h3 {
+	margin: 2em 0 0;
+	}
 
 ul {
-	list-style-type: none;
 	padding: 0;
+	list-style-type: none;
+	}
+	
+
+	
+section {
+    background: #eee;
+    padding: 1em;
+    margin-bottom: 1em;
 }
 
-ul li {
-	/* border-top: 3px solic #080; */
-}
-
-label {
-	/* background-color: #ffd; */
-}
-
-.section-1 ul li {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.section-1 ul li label {
-	flex: 0 0 8em;
-}
-
-.section-1 ul li input[type="text"],
-.section-1 ul li select {
-	flex: 4 0 2em;
-}
-
-.section-2 ul {
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.section-2 ul li {
-	margin: 0 1em 0 0;
-	flex: 1 0 15em;
+section p {
+	margin-top: 0;
 }
 
 textarea {
+	box-sizing: border-box;
 	display: block;
-	width: 90%;
+	width: 100%;
 	height: 6em;
+	background: #fcfcfc;
+	border: 1px solid #e8e8e8;
+	padding: 0.4em;
+	font-family: sans-serif;
+	color: #777;
+	}
+
+@media only screen and (min-width: 40em) {
+
+  div.container {
+    margin: auto;
+  }
+
 }

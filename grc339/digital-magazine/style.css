@@ -1,0 +1,54 @@
+/*CSS document*/
+
+body {
+    background-color: #E5E2DB;
+    color: #4F442C;
+    font-family: "quiche-flare", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #4F442C;
+}
+
+div.container {
+    max-width: 40em;
+    margin: auto;
+    background-color: #F4F3ED;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: de-walpergens-pica-sc, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-story-teaser {
+    border: 1px solid #99998E;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.image-teaser {
+    border: 1px solid #99998E;
+    padding: 10px;
+    margin-bottom: 15px;
+    /* Additional styling */
+}

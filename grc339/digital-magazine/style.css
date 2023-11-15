@@ -124,35 +124,60 @@ button {
     margin-right: 1em;
 }
 
-.photogallery .article {
-    max-width: 80em;
+
+div.gallery{
+    max-width: 40em;
     margin: auto;
+    padding: 0 22em 2em 22em;
     background-color: #F4F3ED;
-    padding: 2em;
-    border-radius: 5px;
-  }
-  
-  .photogallery main.gallery {
+}
+
+div.gallery img{
+    width: 100%;
+    object-fit: cover;
+}
+
+div.gallery main{
     position: relative;
+    padding-bottom: calc(64% + 7em);
     overflow: hidden;
-    padding-bottom: calc(72% + 3em);
-  }
-  
-  .photogallery figure {
+}
+
+div.gallery figure{
     margin: 0;
     width: 100%;
-    opacity: 1;
+    position: absolute;
+    opacity: 0;
     transition: opacity 1s;
 }
-  
-  .photogallery nav.gallery {
-    display: flex;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 0.2em;
-  }
 
-  .photogallery input:checked ~ .gallery figure {
-    opacity: 0;
+div.gallery figcaption{
+    margin: .5em 0;
+    font-family: "effra", sans-serif;
+    font-weight: 300;
+    font-style: italic;    
+    font-size: medium;
+}
+
+div.gallery nav{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+}
+
+div.gallery input{
+    display: none;
+}
+
+input:nth-of-type(1):checked~main figure:nth-of-type(1),
+input:nth-of-type(2):checked~main figure:nth-of-type(2),
+input:nth-of-type(3):checked~main figure:nth-of-type(3),
+input:nth-of-type(4):checked~main figure:nth-of-type(4),
+input:nth-of-type(5):checked~main figure:nth-of-type(5),
+input:nth-of-type(6):checked~main figure:nth-of-type(6),
+input:nth-of-type(7):checked~main figure:nth-of-type(7),
+input:nth-of-type(8):checked~main figure:nth-of-type(8){
+    opacity: 1;
 }
 
 @media screen and (min-width: 60em) {

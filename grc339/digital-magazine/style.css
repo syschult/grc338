@@ -80,6 +80,10 @@ ul {
     border-top: 1px #4F442C solid;
 }
 
+footer {
+    padding-top: 10em;
+}
+
 .subscription-form {
     margin-top: 2em; 
 }
@@ -126,9 +130,9 @@ button {
 
 
 div.gallery{
-    max-width: 40em;
+    max-width: 50em;
     margin: auto;
-    padding: 0 22em 2em 22em;
+    padding: 2em;
     background-color: #F4F3ED;
 }
 
@@ -228,5 +232,92 @@ input:nth-of-type(8):checked~main figure:nth-of-type(8){
     
     section.main-story-teaser a figure img {
         height: 95%;
+    }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+    h1 {  
+        background-image: url("Manor\ &\ Meadow\ dark.png");  
+        background-repeat: no-repeat;  
+        background-size: contain;  
+        }  
+
+    h1 img {  
+        opacity: 0;  
+        }  
+    
+    body {
+        background-color: #2C2C2C;
+        color: #CCCCCC;
+    }
+
+    a {
+        color: #CCCCCC;
+    }
+
+    div.container {
+        background-color: #2C2C2C;
+    }
+
+    div.article {
+        background-color: #2C2C2C;
+    }
+
+    section {
+        background-color: #2C2C2C;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: #CCCCCC;
+    }
+
+    figure {
+        background-color: #2C2C2C;
+    }
+
+    label {
+        cursor: pointer;
+        color: #CCCCCC;
+    }
+
+    nav ul {
+        background-color: #2C2C2C;
+    }
+
+    .text-teaser {
+        border-top: 1px #CCCCCC solid;
+    }
+
+    .subscription-form {
+        background-color: #2C2C2C;
+    }
+
+    form {
+        background-color: #2C2C2C;
+    }
+
+    label {
+        color: #CCCCCC;
+    }
+
+    button {
+        background-color: #CCCCCC;
+        color: #2C2C2C;
+    }
+
+    .checkbox-group label {
+        color: #CCCCCC;
+    }
+
+    div.gallery {
+        background-color: #2C2C2C;
+    }
+
+    div.gallery figcaption {
+        color: #CCCCCC;
+    }
+
+    div.gallery nav {
+        background-color: #2C2C2C;
     }
 }

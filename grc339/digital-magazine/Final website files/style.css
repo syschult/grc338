@@ -80,6 +80,10 @@ ul {
     border-top: 1px #4F442C solid;
 }
 
+footer {
+    padding-top: 10em;
+}
+
 .subscription-form {
     margin-top: 2em; 
 }
@@ -126,9 +130,9 @@ button {
 
 
 div.gallery{
-    max-width: 40em;
+    max-width: 50em;
     margin: auto;
-    padding: 0 22em 2em 22em;
+    padding: 2em;
     background-color: #F4F3ED;
 }
 
